@@ -1,0 +1,29 @@
+<div class="container p-2">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link " routerLinkActive="active" routerLink="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"routerLinkActive="active" routerLink="/server">Server</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLinkActive="active" routerLink="/user">User</a>
+    </li>
+  </ul>
+  <div class="row mt-2">
+    <div class="col-12 col-sm-10">
+      <router-outlet></router-outlet>
+      <!-- <app-home></app-home> -->
+    </div>   
+  </div>
+  <!-- <div class="row">
+      <div class="col-12 col-sm-10">
+        <app-server></app-server>
+      </div> 
+  </div>
+  <div class="row">
+      <div class="col-12 col-sm-10">
+        <app-user></app-user>
+      </div>  
+  </div> -->
+</div>

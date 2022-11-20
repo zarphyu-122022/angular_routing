@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-4">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action" 
+            *ngFor="let user of users" [routerLink]="['/user',user.name,user.id]"
+            [queryParams]="{age:20}"
+            fragment="sec3">{{user.name}}</li>
+            
+        </ul>
+
+    </div>
+    <div class="col-6">
+        <!-- <app-user-one></app-user-one> -->
+        <router-outlet></router-outlet>
+        <button class="btn btn-outline-info" (click)="backtoHome()">Back to Home</button>
+
+    </div>
+</div>

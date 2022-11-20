@@ -1,0 +1,15 @@
+<div *ngIf="noedittem ;else template">
+  <div class="from-group">
+    <label for="">Server Name</label>
+    <input type="text" class="form-control" [(ngModel)]="serverEditname" />
+  </div>
+  <div class="form-group">
+    <label for="">Status</label>
+    <input type="text" class="form-control" [(ngModel)]="serverEditstatus" />
+  </div>
+
+  <button class="btn btn-outline-info mt-2" (click)="update()">Update</button>
+</div>
+<ng-template #template >
+  <p>This is ng Template.</p>
+</ng-template>
